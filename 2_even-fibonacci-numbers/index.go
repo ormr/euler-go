@@ -14,6 +14,7 @@ func fiboEvenSum(n int) int {
 	sum := 0
 	Fa := 1
 	Fb := 1
+
 	for Fb <= n {
 		Fc := Fa + Fb
 		Fa = Fb
@@ -23,5 +24,6 @@ func fiboEvenSum(n int) int {
 			sum += Fb
 		}
 	}
+	
 	return sum
 }
